@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   get("/", { :controller => "zebra", :action => "pig"})
-  
-  get("/rock", {:controller => "zebra", action => "giraffe"} ) do
 
-  get("/paper", {:controller => "zebra", action => "elephant"} ) do
+  get("/rock", { :controller => "zebra", :action => "giraffe" })
 
-  get("/scissors", {:controller => "zebra", action => "lion"} ) do
+  get("/paper", { :controller => "zebra", :action => "elephant" })
 
-
+  get("/scissors", { :controller => "zebra", :action => "lion" })
 end
